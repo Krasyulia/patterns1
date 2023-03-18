@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/dw86vie8f122ft7e?svg=true)](https://ci.appveyor.com/project/Krasyulia/patterns1)
