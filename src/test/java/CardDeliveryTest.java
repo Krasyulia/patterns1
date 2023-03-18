@@ -28,7 +28,7 @@ public class CardDeliveryTest {
         $("[data-test-id='date'] input").val(dateByClient);
         $("[data-test-id='name'] input").val(DataGenerator.surNameAndFirstName());
         $("[data-test-id='phone'] input").val(DataGenerator.phone());
-//        $("[data-test-id='agreement']").click();
+        $("[data-test-id='agreement']").click();
         $(".button__text").click();
         $(".notification__title").shouldHave(Condition.text("Успешно!"), Duration.ofSeconds(15));
         $(".notification__content").shouldHave(Condition.text("Встреча успешно запланирована на " + dateByClient), Duration.ofSeconds(15));
