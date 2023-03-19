@@ -1,6 +1,5 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
@@ -16,7 +15,6 @@ public class CardDeliveryTest {
     void setupTest() {
         Configuration.holdBrowserOpen = true;
         open("http://localhost:9999/");
-        Faker faker = new Faker(new Locale("ru"));
         $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.chord(Keys.BACK_SPACE));
     }
 
